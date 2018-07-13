@@ -1,2 +1,4 @@
 # competitive-programming
-contains my solutions for competitive programming problems
+repository for my competitive programming related stuffs
+
+my username for online judges is **nasgorportugal** except for UVa online judge (**nasgor_portugal**)
