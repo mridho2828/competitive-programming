@@ -33,3 +33,4 @@ inline ll lucas(ll a, ll b, ll mod) {
 	if (n < k) return 0;
 	return (nCk(n, k, mod) * lucas(a / mod, b / mod, mod) % mod);
 }
+// nCk must be precomputed
