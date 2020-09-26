@@ -56,16 +56,16 @@ int main () {
 		for (int i = 1; i <= 4*n; i++) {
 			segtree[i].val = segtree[i].lazy = 0;
 		}
-		int op, p, q;
+		int op, a, b;
 		ll v;
 		while (q--) {
-			scanf("%d %d %d", &op, &p, &q);
+			scanf("%d %d %d", &op, &a, &b);
 			if (op == 0) {
 				scanf("%lld", &v);
-				update(1, 0, N - 1, --p, --q, v);
+				update(1, 1, n, a, b, v);
 			}
 			else {
-				ll res = query(1, 0, N - 1, --p, --q);
+				ll res = query(1, 1, n, a, b);
 				printf("%lld\n", res);
 			}
 		}
