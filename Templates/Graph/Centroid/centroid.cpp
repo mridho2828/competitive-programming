@@ -24,7 +24,7 @@ int findcenter(int cur, int prev, int tot) {
 	return cur;
 }
 
-void decompose (int cur, int tot) {
+void decompose(int cur, int tot) {
 	if (tot == 1) return;
 	dfs(cur, -1);
 	int center = findcenter(cur, -1, tot);
